@@ -1,0 +1,45 @@
+
+include header
+
+html
+  head
+      title Voting App
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js")
+      link(href="/public/css/main.css", rel="stylesheet", type="text/css")
+
+  body
+
+    //+mx-header(username, route)
+    +mx-header(logged, route)
+
+    //div.container
+    //  img(src="/public/img/bars-150x86.png")
+
+    h1 Voting App
+
+
+    div.panels
+
+        div.panel
+            div.title Polls
+            div.list
+
+        div.chartdiv.panel
+            div.title Chart
+            div.display
+                div#chartdiv
+                    canvas#chart
+
+        div.panel
+            div.title Vote
+            div.vote
+              div#votetitle
+              div#voteinfo
+              div#voteoptions
+              div#votebutton
+
+
+    script(type="text/javascript" src="/common/ajax-functions.js")
+    script(type="text/javascript" src="/controllers/pollsController.client.js")
+    script(type="text/javascript" src="/controllers/userController.client.js")
+

@@ -1,0 +1,27 @@
+
+//mixin mx-header(username, route)
+mixin mx-header(logged, route)
+
+    div.header
+      div.home
+        if route!="/"
+          a(href="/") home
+      div.user
+        if logged
+          span.brackets [&nbsp;
+          span#username.login
+          span.brackets &nbsp;]
+          span#userid(style="display: none;")
+          if route=="/"
+            span.profile.pointer
+              a(href="/mypolls") &nbsp;my polls
+            span.profile.pointer &nbsp;|
+          span.profile.pointer
+            a(href="/logout") &nbsp;logout
+        else
+          span.profile.pointer
+            a(href="/login")
+              img.gh-logo(src="/public/img/gh-mark-32px.png")
+              span.login login&nbsp;
+              span.with with github&nbsp;
+

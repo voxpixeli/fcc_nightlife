@@ -19,16 +19,22 @@
     "boilerplate"
   ],
   "scripts": {
-  "start": "node server.js"
+    "start": "node server.js"
   },
   "author": "Blake Johnston",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.7.0",
     "dotenv": "^1.2.0",
     "express": "^4.12.4",
     "express-session": "^1.11.3",
+    "mongod": "^2.0.0",
     "mongoose": "^4.1.0",
     "passport": "^0.3.0",
-    "passport-github": "^1.0.0"
+    "passport-github": "^1.0.0",
+    "pug": "^2.0.0-rc.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }

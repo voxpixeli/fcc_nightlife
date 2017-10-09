@@ -97,21 +97,6 @@ header a ~ p {
 	margin-left: 10px
 }
 
-/****** Logo Div Styling ******/
-
-img {
-	margin: 0 auto;
-	display: block;
-}
-
-.clementine-text { /* Styling for the Clementine.js text */
-	padding: 0;
-	margin: -25px 0 0 0;
-	font-weight: 500;
-	font-size: 60px;
-	color: #FFA000;
-}
-
 /****** Click Styling ******/
 
 .btn-container {	/* Styling for the div that contains the buttons */
@@ -201,4 +186,141 @@ span {
 	color: #FFFFFF;
 	display: inline;
 	margin: 0;
+}
+
+
+
+
+/****** Non-Clementine Styling ******/
+
+.pointer {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.btn {
+	cursor: pointer;
+	text-align: center;
+}
+
+.validate {
+	background-color: #00BC00;
+}
+
+.delete {
+	background-color: #D40000;
+}
+
+.header {
+	padding: 10px;
+	background-color: #EEEEEE;
+}
+
+.header>.home {
+	width: 50%;
+	text-align: left;
+	display: inline-block;
+}
+.header>.user {
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+}
+.brackets, .with {
+	font-weight: normal;
+}
+.gh-logo {
+	float: right;
+	width: 20px;
+	height: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.list {
+
+}
+
+.chartdiv {
+	width: 600px;
+	height: 400px;
+
+}
+
+.form {
+
+}
+
+.fields {
+	padding: 10px;
+}
+
+.field>input {
+	width: 400px;
+}
+
+.panel {
+	display: inline-block;
+	float: left;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.panel>.title {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.poll {
+	padding: 10px;
+}
+.poll>.title {
+	color: red;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+.poll>.info {
+	color: #555555;
+	font-style: italic;
+}
+.poll>.items>.item {
+	color: #333333;
+	margin-left: 10px;
+	background-color: #DDDDDD;
+	border: 1px solid #777777;
+}
+
+#share {
+	display: inline-block;
+	margin-left: 12px;
+}
+.link {
+	display: inline-block;
+	margin: 0 8px;
+}
+.link>a>img {
+	vertical-align: middle;
+}
+
+.vote {
+	padding: 10px;
+}
+#votetitle {
+	margin-bottom: 5px;
+	color: red;
+}
+#voteinfo {
+	margin-bottom: 10px;
+	color: #555555;
+	font-style: italic;
+}
+#votebutton {
+	margin-top: 20px;
 }
