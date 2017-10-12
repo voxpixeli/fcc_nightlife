@@ -21,6 +21,7 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	background-color: dimgray;
 }
 
 header {
@@ -45,25 +46,6 @@ header p {
 	margin: 16px 0 5px 0;
 }
 
-.menu {
-	text-decoration: none;
-	padding: 6px;
-	margin: 0;
-	color: #727272;
-}
-
-.menu:visited {
-	color: #727272;
-}
-
-.menu:hover {
-	color: #FFA000;
-}
-
-.menu:active {
-	color: #FF630D;
-}
-
 header a ~ p {
 	margin: 0;
 	padding: 0;
@@ -71,20 +53,12 @@ header a ~ p {
 	color: #ECEFF1;
 }
 
-#display-name {
-	font-weight: 400;
-}
 
 /****** Login Styling ******/
 
 .login {
 	margin: 86px auto 0 auto;
 	text-align: center;
-}
-
-#login-btn {
-	width: 225px;
-	padding: 7px 5px;
 }
 
 .btn p {
@@ -110,10 +84,10 @@ header a ~ p {
 	background-color: #00BCD4;
 	display: inline-block;
 	border: 0;
-	font-size: 14px;
+	font-size: 18px;
 	border-radius: 3px;
-	padding: 10px 5px;
-	width: 100px;
+	padding: 11px 16px 9px 16px;
+	/*width: 100px;*/
 	font-weight: 500;
 }
 
@@ -125,15 +99,6 @@ header a ~ p {
 	transform: scale(0.9, 0.9);
 	-webkit-transform: scale(0.9, 0.9);
 	-moz-transform: scale(0.9, 0.9);
-}
-
-.btn-delete {	/* Styling for delete button */
-	background-color: #ECEFF1;
-	color: #212121;
-}
-
-#click-nbr {
-	font-weight: 400;
 }
 
 /****** Profile Styling ******/
@@ -182,19 +147,16 @@ span {
 	color: #FF630D;
 }
 
-#menu-divide {
-	color: #FFFFFF;
-	display: inline;
-	margin: 0;
-}
-
-
 
 
 /****** Non-Clementine Styling ******/
 
 .pointer {
 	cursor: pointer;
+}
+
+.block {
+	display: inline-block;
 }
 
 a {
@@ -207,12 +169,8 @@ a {
 	text-align: center;
 }
 
-.validate {
+.search {
 	background-color: #00BC00;
-}
-
-.delete {
-	background-color: #D40000;
 }
 
 .header {
@@ -241,86 +199,82 @@ a {
 
 h1 {
 	text-align: center;
+	color: white;
+	font-weight: normal;
+}
+
+#searchdiv {
+	width: 500px;
+	margin: auto;
+}
+.location>span {
+	margin-right: 10px;
+}
+.location>input {
+	width: 400px;
+	padding: 8px;
+	border: solid 2px #309050;
+	border-radius: 3px;
+	transition: box-shadow 0.3s, border 0.3s;
+	background-color: lightgray;
+	font-size: 20px;
+}
+.location>input:focus,
+.location>input.focus{
+	border: solid 2px #77ddaa;
+	box-shadow: 0 0 8px 2px #00C070;
 }
 
 .list {
+	margin-top: 40px;
+}
+.bar {
+	width: 1000px;
+	height: 120px;
+	margin: auto;
+	padding:  20px;
+}
+.even {
+	background-color: #D5C3AA;
+}
+.odd {
+	background-color: #EAE2D6;
+}
+.photo {
 
 }
-
-.chartdiv {
-	width: 600px;
-	height: 400px;
-
+.info{
+	vertical-align: top;
+	margin-left: 30px;
+}
+.name {
+	font-size: 32px;
+}
+.location {
+	font-size: 24px;
+	color: darkslategray;
+	margin-left: 15px;
+}
+.going {
+	font-size: 24px;
+	color: #263CE7;
+}
+.zero {
+	color: #5C7C9C;
+}
+.go {
+	font-size: 24px;
+	color: #007040;
+	margin-left: 15px;
+}
+.igo {
+	font-size: 24px;
+	color: #E70036;
+	margin-left: 15px;
 }
 
-.form {
-
-}
-
-.fields {
-	padding: 10px;
-}
-
-.field>input {
-	width: 400px;
-}
-
-.panel {
-	display: inline-block;
-	float: left;
-	border: 1px solid black;
-	margin: 5px;
-}
-
-.panel>.title {
-	background-color: black;
-	color: white;
-	text-align: center;
-}
-
-.poll {
-	padding: 10px;
-}
-.poll>.title {
-	color: red;
-	margin-right: 10px;
-	text-decoration: underline;
-}
-.poll>.info {
-	color: #555555;
-	font-style: italic;
-}
-.poll>.items>.item {
-	color: #333333;
-	margin-left: 10px;
-	background-color: #DDDDDD;
-	border: 1px solid #777777;
-}
-
-#share {
-	display: inline-block;
-	margin-left: 12px;
-}
-.link {
-	display: inline-block;
-	margin: 0 8px;
-}
-.link>a>img {
-	vertical-align: middle;
-}
-
-.vote {
-	padding: 10px;
-}
-#votetitle {
-	margin-bottom: 5px;
-	color: red;
-}
-#voteinfo {
-	margin-bottom: 10px;
-	color: #555555;
-	font-style: italic;
-}
-#votebutton {
+#yelp {
+	height: 40px;
 	margin-top: 20px;
+	text-align: center;
 }

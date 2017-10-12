@@ -24,6 +24,7 @@
   "author": "Blake Johnston",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.5.0",
     "bootstrap": "^3.3.7",
     "chart.js": "^2.7.0",
     "dotenv": "^1.2.0",
@@ -35,6 +36,7 @@
     "passport-github": "^1.0.0",
     "pug": "^2.0.0-rc.4",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "request": "^2.83.0"
   }
 }

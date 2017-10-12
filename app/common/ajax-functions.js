@@ -6,23 +6,23 @@ var ajaxFunctions = {
       if (typeof fn !== 'function') {
          return;
       }
-
       if (document.readyState === 'complete') {
          return fn();
       }
-
       document.addEventListener('DOMContentLoaded', fn, false);
    },
-   ajaxRequest: function ajaxRequest (method, url, callback, datastring) {
-      var xmlhttp = new XMLHttpRequest();
 
+   ajaxRequest: function ajaxRequest (method, url, callback, datastring, authinfo) {
+      var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function () {
          if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             callback(xmlhttp.response);
          }
       };
-
       xmlhttp.open(method, url, true);
+      if (authinfo!=="") {
+         xmlhttp.setRequestHeader("Authorization", authinfo);
+      }
       xmlhttp.send(datastring);
    }
 };
